@@ -1,0 +1,295 @@
+{
+    "currency": "VND",
+    "target_calories_per_day": 1000,
+    "notes": "Protein cao, rau nhiều, món luộc/hấp, dùng ít mỡ động vật",
+    "days": [
+        {
+            "day": "monday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 2
+                    },
+                    {
+                        "item": "banana",
+                        "quantity": 1
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 250
+                    },
+                    {
+                        "item": "broccoli_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 200
+                    },
+                    {
+                        "item": "cabbage_boiled",
+                        "grams": 200
+                    }
+                ]
+            }
+        },
+        {
+            "day": "tuesday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 2
+                    },
+                    {
+                        "item": "apple",
+                        "quantity": 1
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 250
+                    },
+                    {
+                        "item": "cabbage_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 200
+                    },
+                    {
+                        "item": "cucumber",
+                        "grams": 200
+                    }
+                ]
+            }
+        },
+        {
+            "day": "wednesday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 3
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 250
+                    },
+                    {
+                        "item": "green_vegetables_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 200
+                    },
+                    {
+                        "item": "broccoli_boiled",
+                        "grams": 200
+                    }
+                ]
+            }
+        },
+        {
+            "day": "thursday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 2
+                    },
+                    {
+                        "item": "banana",
+                        "quantity": 1
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 250
+                    },
+                    {
+                        "item": "cabbage_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 200
+                    },
+                    {
+                        "item": "salad_vegetables",
+                        "grams": 200
+                    }
+                ]
+            }
+        },
+        {
+            "day": "friday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 2
+                    },
+                    {
+                        "item": "apple",
+                        "quantity": 1
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 250
+                    },
+                    {
+                        "item": "cabbage_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 200
+                    },
+                    {
+                        "item": "green_vegetables_boiled",
+                        "grams": 200
+                    }
+                ]
+            }
+        },
+        {
+            "day": "saturday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 3
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 250
+                    },
+                    {
+                        "item": "broccoli_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 200
+                    },
+                    {
+                        "item": "cucumber",
+                        "grams": 200
+                    }
+                ]
+            }
+        },
+        {
+            "day": "sunday",
+            "meals": {
+                "breakfast": [
+                    {
+                        "item": "boiled_eggs",
+                        "quantity": 2
+                    },
+                    {
+                        "item": "banana",
+                        "quantity": 1
+                    }
+                ],
+                "lunch": [
+                    {
+                        "item": "chicken_breast_boiled",
+                        "grams": 250
+                    },
+                    {
+                        "item": "broccoli_boiled",
+                        "grams": 200
+                    }
+                ],
+                "dinner": [
+                    {
+                        "item": "steamed_fish",
+                        "grams": 200
+                    },
+                    {
+                        "item": "green_vegetables_boiled",
+                        "grams": 200
+                    }
+                ]
+            }
+        }
+    ],
+    "shopping_list_week": [
+        {
+            "item": "chicken_breast",
+            "quantity_kg": 2,
+            "price_per_kg_vnd": 130000,
+            "estimated_cost_vnd": 260000
+        },
+        {
+            "item": "white_fish_fillets",
+            "quantity_kg": 1.5,
+            "price_per_kg_vnd": 90000,
+            "estimated_cost_vnd": 135000
+        },
+        {
+            "item": "eggs",
+            "quantity": 18,
+            "price_per_egg_vnd": 2500,
+            "estimated_cost_vnd": 45000
+        },
+        {
+            "item": "broccoli",
+            "quantity_kg": 1,
+            "price_per_kg_vnd": 60000,
+            "estimated_cost_vnd": 60000
+        },
+        {
+            "item": "cabbage",
+            "quantity_kg": 1,
+            "price_per_kg_vnd": 30000,
+            "estimated_cost_vnd": 30000
+        },
+        {
+            "item": "cucumber",
+            "quantity_kg": 1,
+            "price_per_kg_vnd": 25000,
+            "estimated_cost_vnd": 25000
+        },
+        {
+            "item": "bananas",
+            "quantity_kg": 1,
+            "price_per_kg_vnd": 30000,
+            "estimated_cost_vnd": 30000
+        },
+        {
+            "item": "apples",
+            "quantity_kg": 1,
+            "price_per_kg_vnd": 65000,
+            "estimated_cost_vnd": 65000
+        }
+    ],
+    "estimated_weekly_cost_vnd": 650000
+}
