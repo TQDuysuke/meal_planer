@@ -1,0 +1,17 @@
+{
+  "name": "Kinx's Lab | Meal Planer",
+  "short_name": "Meal Planer",
+  "description": "Personal Meal Planer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1f2023",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
