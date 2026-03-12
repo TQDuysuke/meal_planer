@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import mealData from '../meal.json';
 import { getTodaySeed, getSeededRandom } from './utils';
-import { 
-  Utensils, 
-  Coffee, 
-  Sunrise, 
-  Moon, 
-  ShoppingCart, 
-  Calendar, 
+import {
+  Utensils,
+  Coffee,
+  Sunrise,
+  Moon,
+  ShoppingCart,
+  Calendar,
   Flame,
   Info
 } from 'lucide-react';
@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const seed = getTodaySeed();
     const random = getSeededRandom(seed);
-    
+
     // Pick a random day plan
     const dayIndex = Math.floor(random * mealData.days.length);
     setTodayPlan(mealData.days[dayIndex]);
@@ -45,32 +45,32 @@ function App() {
 
   if (!todayPlan) return null;
 
-  const todayDate = new Date().toLocaleDateString('en-US', { 
-    weekday: 'long', 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
+  const todayDate = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
   });
 
   // Calculate daily shopping list based on today's meals
   const calculateDailyShopping = () => {
     const items = {};
     const mealTypes = ['breakfast', 'lunch', 'dinner'];
-    
+
     mealTypes.forEach(type => {
       todayPlan.meals[type].forEach(mealItem => {
         const key = mealItem.item;
         if (!items[key]) {
-          items[key] = { 
-            name: formatItem(key), 
-            quantity: 0, 
-            unit: mealItem.grams ? 'g' : 'pcs' 
+          items[key] = {
+            name: formatItem(key),
+            quantity: 0,
+            unit: mealItem.grams ? 'g' : 'pcs'
           };
         }
         items[key].quantity += (mealItem.grams || mealItem.quantity || 0);
       });
     });
-    
+
     return Object.values(items);
   };
 
@@ -83,11 +83,10 @@ function App() {
         <h1>Meal Planner</h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Weight Loss Program - {mealData.target_calories_per_day} kcal</p>
       </header>
-
       {activeTab === 'plan' ? (
         <div className="fade-in">
           <div className="quote-card">
-            <p style={{ fontStyle: 'italic', fontSize: '1.1rem', fontWeight: '500' }}>
+            <p style={{ fontStyle: 'italic', fontSize: '0.9rem', fontWeight: '500' }}>
               "{dailyQuote}"
             </p>
           </div>
@@ -97,22 +96,22 @@ function App() {
             <span>Target: {mealData.target_calories_per_day} kcal</span>
           </div>
 
-          <MealSection 
-            title="Breakfast" 
-            icon={<Sunrise size={20} />} 
-            items={todayPlan.meals.breakfast} 
+          <MealSection
+            title="Breakfast"
+            icon={<Sunrise size={20} />}
+            items={todayPlan.meals.breakfast}
           />
-          
-          <MealSection 
-            title="Lunch" 
-            icon={<Utensils size={20} />} 
-            items={todayPlan.meals.lunch} 
+
+          <MealSection
+            title="Lunch"
+            icon={<Utensils size={20} />}
+            items={todayPlan.meals.lunch}
           />
-          
-          <MealSection 
-            title="Dinner" 
-            icon={<Moon size={20} />} 
-            items={todayPlan.meals.dinner} 
+
+          <MealSection
+            title="Dinner"
+            icon={<Moon size={20} />}
+            items={todayPlan.meals.dinner}
           />
 
           <div className="meal-card" style={{ marginTop: '2rem', background: 'var(--primary-light)', border: 'none' }}>
@@ -154,14 +153,14 @@ function App() {
       )}
 
       <nav className="bottom-nav">
-        <div 
+        <div
           className={`nav-item ${activeTab === 'plan' ? 'active' : ''}`}
           onClick={() => setActiveTab('plan')}
         >
           <Calendar size={24} />
           <span>Plan</span>
         </div>
-        <div 
+        <div
           className={`nav-item ${activeTab === 'shopping' ? 'active' : ''}`}
           onClick={() => setActiveTab('shopping')}
         >
